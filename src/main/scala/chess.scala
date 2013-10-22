@@ -25,8 +25,8 @@ object Chess extends App {
       case Nil => Set(Set())
       case _ => for {
           solution <- getSolutions(pieces.tail)
-          x <- 0 until rows
-          y <- 0 until columns
+          x <- 0 until columns
+          y <- 0 until rows
           candidate = pieces.head (x, y)
           if isAllowed(candidate, solution)
         } yield solution + candidate
