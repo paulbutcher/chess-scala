@@ -33,9 +33,9 @@ object Chess extends App {
     }
   }
 
-  val solutions = new Board(3, 3).getSolutions(List(K, K, R))
+  // val solutions = new Board(3, 3).getSolutions(List(K, K, R))
   // val solutions = new Board(4, 4).getSolutions(List(R, R, N, N, N, N))
-  // val solutions = new Board(6, 9).getSolutions(List(K, K, N, R, B, Q))
+  val solutions = new Board(6, 9).getSolutions(List(K, K, N, R, B, Q))
   println(s"Count: ${solutions.size}")
-  println(solutions mkString "\n")
+  // println(solutions mkString "\n")
 }
